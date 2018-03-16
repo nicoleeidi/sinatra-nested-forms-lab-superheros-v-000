@@ -7,4 +7,7 @@ class Superhero
     @biography=args[:biography]
     @@all << self
   end
+  def self.all
+    @@all
+  end
 end
