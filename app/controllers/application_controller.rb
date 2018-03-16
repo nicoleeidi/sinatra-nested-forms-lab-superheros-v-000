@@ -8,7 +8,8 @@ get '/' do
 end
 post '/team' do
 @team= params[:team]
-params[:team][:heoes]
+params[:team][:heoes].each do |hero_details|
+
   erb :team
 end
 end
