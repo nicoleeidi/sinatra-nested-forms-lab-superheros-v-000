@@ -1,2 +1,3 @@
 class Team
-end 
+  attr_accessor :name, :motto
+end
