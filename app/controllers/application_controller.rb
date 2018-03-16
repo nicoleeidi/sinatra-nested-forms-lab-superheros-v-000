@@ -7,7 +7,7 @@ get '/' do
   erb :super_hero
 end
 post '/team' do
-@team= params[:team]
+@team= Team.new(params[:team])
 params[:team][:heroes].each do |hero_details|
 Superhero.new(hero_details)
 end
